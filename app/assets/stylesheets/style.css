@@ -29,8 +29,8 @@ h1 { }
 #header .facebook { position:absolute; left:605px; top:110px}
 #header .toonbox  { position:absolute;  left:770px; top:140px}
 
-#header .facebook .shadow { background:url(../images/share-fb-shadow.png) no-repeat 0 0;}
-#header .toonbox .shadow { background:url(../images/toonbox-shadow.png) no-repeat 0 0;}
+#header .facebook .shadow { background:url(../assets/share-fb-shadow.png) no-repeat 0 0;}
+#header .toonbox .shadow { background:url(../assets/toonbox-shadow.png) no-repeat 0 0;}
 
 #header .facebook .shadow,
 #header .toonbox .shadow { 
