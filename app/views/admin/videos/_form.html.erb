@@ -1,0 +1,15 @@
+<%= semantic_form_for [:admin, resource] do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :position %>
+  <% end %>
+
+  <div class="globalize-inputs globalize-content">
+    <%= f.globalize_inputs :translations do |lf| %>
+      <%= lf.inputs do %>
+        <%= lf.input :url, input_html: {rows:1}%>
+      <% end %>
+    <% end %>
+  </div>
+
+  <%= f.actions %>
+<% end %>

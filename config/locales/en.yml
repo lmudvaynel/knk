@@ -2,4 +2,13 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  title: "Kit and Kate: a new cartoon for preschool kids"
+  kit_html: "Kit is a by the books kitten who has no trouble being &#034;a good kid&#034;. He has a much easier time sticking to a plan than his sister, Kate. But when things don't go the way he was expecting,  Kit can lose his cool, and his kid-feelings come out."
+  kate: "Kate is naturally whimsical, with a mischievous streak. She can easily find fun all around her, and surprises usually delight her. But Kate's also very easily distracted, which often throws their day's adventure a curve ball."
+  dad: "A good-humored doctor who's a bit absent minded and clumsy, but very loving. He may not be perfect, but he knows how to laugh at himself."
+  mom: "An artist who loves to feed the imagination of her kids and play along in their adventures. She's always right outside the playroom for when Kit and Kate need her to lend a hand."
+  story-1: "On each adventure Kit and Kate make choices, but bad choices lead to a dead end for them. OH NO! Luckily a helpful stranger happens by to nudge them in the right direction."
+  story-2: "Now Kit and Kate can figure out their problems for themselves and try their adventure all over again with the magic words:"
+  translation:
+    en: "English"
+    ru: "Русский"

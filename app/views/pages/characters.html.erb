@@ -1,0 +1,39 @@
+<div class="bg-character-0">
+	<div class="page_title">
+		<%= image_tag "characters-title-#{I18n.locale.to_s}.png" %>
+	</div>
+<div class="bg-character-1-<%= I18n.locale.to_s %>">
+<div class="bg-character-2-<%= I18n.locale.to_s %>">
+<div class="bg-character-3-<%= I18n.locale.to_s %>">
+<div class="bg-character-4-<%= I18n.locale.to_s %>">
+
+
+	<div id="wrapper">
+		<div id="header"></div>
+		
+		<div id="center">
+			<div class="character-wrapper-1">
+				<%=t 'kit_html' %>
+			</div>
+			<div class="character-wrapper-2">
+				<%=t 'kate' %>
+			</div>
+			<div class="character-wrapper-3">
+				<%=t 'dad' %>
+			</div>
+			<div class="character-wrapper-4">
+				<%=t 'mom' %>
+			</div>
+			
+			<div class="home-character">
+				<%= link_to image_tag("home-#{I18n.locale.to_s}.png", alt: "Home"), root_path %>
+			</div>
+		</div>
+		
+	</div>
+	
+</div>
+</div>
+</div>
+</div>
+</div>

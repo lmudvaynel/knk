@@ -12,6 +12,7 @@ gem 'russian'
 gem 'i18n-js'
 gem 'globalize3' #Мультиязыки
 gem 'ActiveAdmin-Globalize3-inputs'
+gem 'route_translator'
 
 # Gems used only for assets and not required
 # in production environments by default.
