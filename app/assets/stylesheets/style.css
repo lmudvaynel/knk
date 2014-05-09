@@ -108,6 +108,7 @@ h1 { }
 .video-wrap {width: 1280px; margin: 0 auto; padding-top: 300px; }
 .episode-wrap {background:url(../assets/video-frame.png); width: 738px; height: 462px; margin: 0 auto; }
 .episode-wrap iframe { margin-left: 76px; margin-top: 68px; }
+.video-home { clear: both; text-align: center; margin-top: 50px;}
 
 /* BG */
 .bg-contact #center { height:900px}

@@ -5,4 +5,7 @@
 	<div class="video-wrap">
 		<%= render @videos %>
 	</div>
+	<div class="video-home">
+		<%= link_to image_tag("home-#{I18n.locale.to_s}.png", alt: "Home"), root_path %>
+	</div>
 </div>
