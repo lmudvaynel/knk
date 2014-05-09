@@ -17,7 +17,7 @@ h1 { }
 
 
 /* HEADER */
-#header .page-logo { position:absolute; left:100px; top:20px}
+#header .page-logo { position:absolute; left:100px; top:20px; }
 
 #header { position:relative; height:240px}
 #header .language-wrap { position:absolute; left:90px; top:130px;}
@@ -25,9 +25,9 @@ h1 { }
 #header .language-eng:hover { background: url(../assets/language-rus-hover.png); }
 #header .language-rus { display: block; width: 114px; height: 74px; background: url(../assets/language-eng.png); }
 #header .language-rus:hover { background: url(../assets/language-eng-hover.png); }
-#header .logo { position:absolute; left:210px; top:10px}
-#header .facebook { position:absolute; left:605px; top:110px}
-#header .toonbox  { position:absolute;  left:770px; top:140px}
+#header .logo { position:absolute; left:210px; top:10px; }
+#header .facebook { position:absolute; left:605px; top:110px; }
+#header .toonbox  { position:absolute;  left:770px; top:140px; }
 
 #header .facebook .shadow { background:url(../assets/share-fb-shadow.png) no-repeat 0 0;}
 #header .toonbox .shadow { background:url(../assets/toonbox-shadow.png) no-repeat 0 0;}
@@ -54,7 +54,7 @@ h1 { }
 
 #header .kikstart:hover .shadow { background:url(../assets/share-kik-shadow.png) no-repeat 0 0; opacity:1}
 #header .logo:hover .shadow { background:url(../assets/shadow-logo.png) no-repeat 0 0; opacity:1}
-#header .facebook:hover .shadow { background:url(../assetsshare-fb-shadow.png) no-repeat 0 0; opacity:1}
+#header .facebook:hover .shadow { background:url(../assets/share-fb-shadow.png) no-repeat 0 0; opacity:1}
 #header .toonbox:hover .shadow { background:url(../assets/toonbox-shadow.png) no-repeat 0 0; opacity:1}
 
 /* CENTER */
@@ -109,6 +109,15 @@ h1 { }
 .episode-wrap {background:url(../assets/video-frame.png); width: 738px; height: 462px; margin: 0 auto; }
 .episode-wrap iframe { margin-left: 76px; margin-top: 68px; }
 .video-home { clear: both; text-align: center; margin-top: 50px;}
+.video-home a { 
+	opacity:0.8; 
+	-webkit-transition: opacity 0.5s ease;
+	-moz-transition: opacity 0.5s ease;
+	-o-transition: opacity 0.5s ease;
+	-ms-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease; 
+}
+.video-home a:hover { opacity:1}
 
 /* BG */
 .bg-contact #center { height:900px}
