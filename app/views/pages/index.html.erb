@@ -7,9 +7,9 @@
 			</div>
 			<div class="language-wrap">
 				<% if I18n.locale == I18n.default_locale %>
-					  <%= link_to '', params.merge(:locale => 'ru'), class: 'language-eng' %>
-					<% else %>
 					  <%= link_to '', params.merge(:locale => 'en'), class: 'language-rus' %>
+					<% else %>
+					  <%= link_to '', params.merge(:locale => 'ru'), class: 'language-eng' %>
 					<%end%>
 			</div>
 			<div class="facebook">

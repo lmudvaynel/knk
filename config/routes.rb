@@ -4,7 +4,7 @@ Knk::Application.routes.draw do
   
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  root :to => "pages#show", :slug => 'index', locale:'en'
+  root :to => "pages#show", :slug => 'index'
   
   localized do
     root :to => "pages#show", :slug => 'index'
