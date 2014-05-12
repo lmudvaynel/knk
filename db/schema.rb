@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140508153511) do
+ActiveRecord::Schema.define(:version => 20140512064910) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "namespace"
@@ -64,6 +64,23 @@ ActiveRecord::Schema.define(:version => 20140508153511) do
   end
 
   add_index "pages", ["slug"], :name => "index_pages_on_slug", :unique => true
+
+  create_table "playlist_translations", :force => true do |t|
+    t.integer  "playlist_id", :null => false
+    t.string   "locale",      :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.string   "url"
+  end
+
+  add_index "playlist_translations", ["locale"], :name => "index_playlist_translations_on_locale"
+  add_index "playlist_translations", ["playlist_id"], :name => "index_playlist_translations_on_playlist_id"
+
+  create_table "playlists", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "video_translations", :force => true do |t|
     t.integer  "video_id",   :null => false

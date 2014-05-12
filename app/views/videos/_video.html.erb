@@ -1,3 +1,5 @@
-<div class="episode-wrap">
-	<iframe width="600px" height="340" src="//www.youtube.com/embed/<%=video.url.scan(/v=([^&]+)/)[0][0] %>" frameborder="0" allowfullscreen></iframe>
-</div>
+<% if video.url.length > 0 %>
+	<div class="episode-wrap">
+		<iframe width="600px" height="340" src="//www.youtube.com/embed/<%=video.url.scan(/v=([^&]+)/)[0][0] %>" frameborder="0" allowfullscreen></iframe>
+	</div>
+<% end %>
