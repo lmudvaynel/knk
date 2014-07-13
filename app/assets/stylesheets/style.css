@@ -27,12 +27,15 @@ h1 { }
 #header .language-rus:hover { background: url(../assets/language-eng-hover.png); }
 #header .logo { position:absolute; left:210px; top:10px; }
 #header .facebook { position:absolute; left:605px; top:110px; }
-#header .toonbox  { position:absolute;  left:770px; top:140px; }
+#header .toonbox  { position:absolute; left:770px; top:140px; }
+#header .itunes  { position: absolute; left: 797px; top: 11px; }
 
 #header .facebook .shadow { background:url(../assets/share-fb-shadow.png) no-repeat 0 0;}
 #header .toonbox .shadow { background:url(../assets/toonbox-shadow.png) no-repeat 0 0;}
+#header .itunes  { background:url(../assets/itunes-icon-shadow.png) no-repeat 0 0;}
 
 #header .facebook .shadow,
+#header .itunes .shadow,
 #header .toonbox .shadow { 
 	display:block;
 	position:absolute;
@@ -56,6 +59,7 @@ h1 { }
 #header .logo:hover .shadow { background:url(../assets/shadow-logo.png) no-repeat 0 0; opacity:1}
 #header .facebook:hover .shadow { background:url(../assets/share-fb-shadow.png) no-repeat 0 0; opacity:1}
 #header .toonbox:hover .shadow { background:url(../assets/toonbox-shadow.png) no-repeat 0 0; opacity:1}
+#header .itunes:hover .shadow { background:url(../assets/itunes-icon-shadow.png) no-repeat 0 0; opacity:1}
 
 /* CENTER */
 #center { height:560px; position:relative }
