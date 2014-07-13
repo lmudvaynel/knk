@@ -1,75 +1,75 @@
 
 <div class="bg-main">
-  <div id="wrapper">
-    <div id="header">
-      <div class="logo">
-          <%= link_to image_tag("logo-#{I18n.locale.to_s}.png", alt: "Kit n Kate"), params.merge(locale: I18n.locale.to_s) %>
-      </div>
-      <div class="language-wrap">
-        <% if I18n.locale == I18n.default_locale %>
-            <%= link_to '', params.merge(:locale => 'ru'), class: 'language-eng' %>
-          <% else %>
-            <%= link_to '', params.merge(:locale => 'en'), class: 'language-rus' %>
-          <%end%>
-      </div>
-      <div class="facebook">
-        <a target="_blank" href="https://www.facebook.com/knkfilm">
-          <span class="shadow"></span>
-          <%= image_tag "share-fb.png", alt: "facebook" %>
-        </a>
-      </div>
-      <div class="itunes">
-        <a target="_blank" href="https://itunes.apple.com/ru/app/kotiki-vpered!/id885852861?mt=8">
-          <span class="shadow"></span>
-          <%= image_tag "itunes-icon.png", alt: "Toonbox.ru" %>
-        </a>
-      </div>
-      <div class="toonbox">
-        <a target="_blank" href="http://toonbox.ru/">
-          <span class="shadow"></span>
-          <%= image_tag "toonbox.png", alt: "Toonbox.ru" %>
-        </a>
-      </div>
-    </div>
-    <div id="center">
-      <div class="video-wrapper">
-        <iframe width="600px" height="340" src="<%=insert_video(@playlists.url) %>" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="cat-male"><%= image_tag "cat-male.png", alt: "Kit" %></div>
-      <div class="cat-female"><%= image_tag "cat-female.png", alt: "Kate" %></div>
-      <div class="clear"></div>
-    </div>
-    
-    <div id="footer">
-      <div class="nav">
-        <ul>
-          <li class="link-character">
-          <%= link_to slug_path("characters") do %>
-            <%= image_tag "link-character.png", alt: "Character" %>
-            <%= image_tag "link-character-text-#{I18n.locale.to_s}.png", alt: "Character", class: "text" %>
-          <% end %>
-          </li>
-          <li class="link-story">
-          <%= link_to slug_path("story") do %>
-            <%= image_tag "link-story.png", alt: "Story" %>
-            <%= image_tag "link-story-text-#{I18n.locale.to_s}.png", alt: "Story", class: "text" %>
-          <% end %>
-          </li>
-          <li class="link-video">
-          <%= link_to slug_path("video") do %>
-            <%= image_tag "link-video.png", alt: "Video" %>
-            <%= image_tag "link-video-text-#{I18n.locale.to_s}.png", alt: "Video", class: "text" %>
-          <% end %>
-          </li>
-          <li class="link-contact">
-          <%= link_to slug_path("contacts") do %>
-            <%= image_tag "link-contact.png", alt: "Contacts" %>
-            <%= image_tag "link-contact-text-#{I18n.locale.to_s}.png", alt: "Contacts", class: "text" %>
-          <% end %>
-          </li>
-        </ul>
-      </div>
-      <div class="clear"></div>
-    </div>
-  </div>
+	<div id="wrapper">
+		<div id="header">
+			<div class="logo">
+					<%= link_to image_tag("logo-#{I18n.locale.to_s}.png", alt: "Kit n Kate"), params.merge(locale: I18n.locale.to_s) %>
+			</div>
+			<div class="language-wrap">
+				<% if I18n.locale == I18n.default_locale %>
+					  <%= link_to '', params.merge(:locale => 'en'), class: 'language-rus' %>
+					<% else %>
+					  <%= link_to '', params.merge(:locale => 'ru'), class: 'language-eng' %>
+					<%end%>
+			</div>
+			<div class="facebook">
+				<a target="_blank" href="https://www.facebook.com/knkfilm">
+					<span class="shadow"></span>
+					<%= image_tag "share-fb.png", alt: "facebook" %>
+				</a>
+			</div>
+			<div class="itunes">
+				<a target="_blank" href="https://itunes.apple.com/ru/app/kotiki-vpered!/id885852861?mt=8">
+					<span class="shadow"></span>
+					<%= image_tag "itunes-icon.png", alt: "itunes.apple.com" %>
+				</a>
+			</div>
+			<div class="toonbox">
+				<a target="_blank" href="http://toonbox.ru/">
+					<span class="shadow"></span>
+					<%= image_tag "toonbox.png", alt: "Toonbox.ru" %>
+				</a>
+			</div>
+		</div>
+		<div id="center">
+			<div class="video-wrapper">
+				<iframe width="600px" height="340" src="<%=insert_video(@playlists.url) %>" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="cat-male"><%= image_tag "cat-male.png", alt: "Kit" %></div>
+			<div class="cat-female"><%= image_tag "cat-female.png", alt: "Kate" %></div>
+			<div class="clear"></div>
+		</div>
+		
+		<div id="footer">
+			<div class="nav">
+				<ul>
+					<li class="link-character">
+					<%= link_to slug_path("characters") do %>
+						<%= image_tag "link-character.png", alt: "Character" %>
+						<%= image_tag "link-character-text-#{I18n.locale.to_s}.png", alt: "Character", class: "text" %>
+					<% end %>
+					</li>
+					<li class="link-story">
+					<%= link_to slug_path("story") do %>
+						<%= image_tag "link-story.png", alt: "Story" %>
+						<%= image_tag "link-story-text-#{I18n.locale.to_s}.png", alt: "Story", class: "text" %>
+					<% end %>
+					</li>
+					<li class="link-video">
+					<%= link_to slug_path("video") do %>
+						<%= image_tag "link-video.png", alt: "Video" %>
+						<%= image_tag "link-video-text-#{I18n.locale.to_s}.png", alt: "Video", class: "text" %>
+					<% end %>
+					</li>
+					<li class="link-contact">
+					<%= link_to slug_path("contacts") do %>
+						<%= image_tag "link-contact.png", alt: "Contacts" %>
+						<%= image_tag "link-contact-text-#{I18n.locale.to_s}.png", alt: "Contacts", class: "text" %>
+					<% end %>
+					</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
 </div>
