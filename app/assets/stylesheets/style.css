@@ -1,12 +1,12 @@
 /* NEW CSS */
-body	{ font-family: Verdana, Geneva, sans-serif; color:#000; font-size:16px; position:relative; }
-td, th	{ font-family: Verdana, Geneva, sans-serif; color:#000; font-size:16px; }
+body  { font-family: Verdana, Geneva, sans-serif; color:#000; font-size:16px; position:relative; }
+td, th  { font-family: Verdana, Geneva, sans-serif; color:#000; font-size:16px; }
 
-a		{ font-family: Verdana, Geneva, sans-serif; color:#000; font-size:14px; text-decoration:none; }
-a:hover	{ font-family: Verdana, Geneva, sans-serif; color:#000; font-size:14px; text-decoration:none}
+a   { font-family: Verdana, Geneva, sans-serif; color:#000; font-size:14px; text-decoration:none; }
+a:hover { font-family: Verdana, Geneva, sans-serif; color:#000; font-size:14px; text-decoration:none}
 
-.clear		{ clear:both}
-#wrapper	{ position:relative; margin:auto; width:960px }
+.clear    { clear:both}
+#wrapper  { position:relative; margin:auto; width:960px }
 
 a, img, input, button, textarea, select { outline: none; resize:none }
 strong, b { font-weight:bold; }
@@ -27,24 +27,27 @@ h1 { }
 #header .language-rus:hover { background: url(../assets/language-eng-hover.png); }
 #header .logo { position:absolute; left:210px; top:10px; }
 #header .facebook { position:absolute; left:605px; top:110px; }
-#header .toonbox  { position:absolute;  left:770px; top:140px; }
+#header .toonbox  { position:absolute; left:770px; top:140px; }
+#header .itunes  { position: absolute; left: 797px; top: 11px; }
 
 #header .facebook .shadow { background:url(../assets/share-fb-shadow.png) no-repeat 0 0;}
 #header .toonbox .shadow { background:url(../assets/toonbox-shadow.png) no-repeat 0 0;}
+#header .itunes  { background:url(../assets/itunes-icon-shadow.png) no-repeat 0 0;}
 
 #header .facebook .shadow,
+#header .itunes .shadow,
 #header .toonbox .shadow { 
-	display:block;
-	position:absolute;
-	opacity:0.5;
-	z-index:1;
-	width:100%;
-	height:100%;
-	-webkit-transition: opacity 0.5s ease;
-	-moz-transition: opacity 0.5s ease;
-	-o-transition: opacity 0.5s ease;
-	-ms-transition: opacity 0.5s ease;
-	transition: opacity 0.5s ease;
+  display:block;
+  position:absolute;
+  opacity:0.5;
+  z-index:1;
+  width:100%;
+  height:100%;
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 .header-bg { background:url(../assets/header-bg.jpg) no-repeat center; height: 270px; margin: 0 auto; }
 .logotip {background:url(../assets/logo-eng.png) no-repeat;display: block; width: 348px; height: 240px; margin: 0 auto; }
@@ -56,6 +59,7 @@ h1 { }
 #header .logo:hover .shadow { background:url(../assets/shadow-logo.png) no-repeat 0 0; opacity:1}
 #header .facebook:hover .shadow { background:url(../assets/share-fb-shadow.png) no-repeat 0 0; opacity:1}
 #header .toonbox:hover .shadow { background:url(../assets/toonbox-shadow.png) no-repeat 0 0; opacity:1}
+#header .itunes:hover .shadow { background:url(../assets/itunes-icon-shadow.png) no-repeat 0 0; opacity:1}
 
 /* CENTER */
 #center { height:560px; position:relative }
@@ -68,12 +72,12 @@ h1 { }
 
 #center .home-story { left:450px; position:absolute; top:3670px; }
 #center .home-story a { 
-	opacity:0.8; 
-	-webkit-transition: opacity 0.5s ease;
-	-moz-transition: opacity 0.5s ease;
-	-o-transition: opacity 0.5s ease;
-	-ms-transition: opacity 0.5s ease;
-	transition: opacity 0.5s ease; 
+  opacity:0.8; 
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease; 
 }
 #center .home-story a:hover { opacity:1}
 
@@ -84,24 +88,24 @@ h1 { }
 
 #center .home-character { left:450px; position:absolute; top:2090px; }
 #center .home-character a { 
-	opacity:0.8; 
-	-webkit-transition: opacity 0.5s ease;
-	-moz-transition: opacity 0.5s ease;
-	-o-transition: opacity 0.5s ease;
-	-ms-transition: opacity 0.5s ease;
-	transition: opacity 0.5s ease; 
+  opacity:0.8; 
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease; 
 }
 #center .home-character a:hover { opacity:1}
 
 
 #center .home-contact { left:450px; position:absolute; top:730px; }
 #center .home-contact a { 
-	opacity:0.8; 
-	-webkit-transition: opacity 0.5s ease;
-	-moz-transition: opacity 0.5s ease;
-	-o-transition: opacity 0.5s ease;
-	-ms-transition: opacity 0.5s ease;
-	transition: opacity 0.5s ease; 
+  opacity:0.8; 
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease; 
 }
 #center .home-contact a:hover { opacity:1}
 
@@ -110,12 +114,12 @@ h1 { }
 .episode-wrap iframe { margin-left: 76px; margin-top: 68px; }
 .video-home { clear: both; text-align: center; margin-top: 50px;}
 .video-home a { 
-	opacity:0.8; 
-	-webkit-transition: opacity 0.5s ease;
-	-moz-transition: opacity 0.5s ease;
-	-o-transition: opacity 0.5s ease;
-	-ms-transition: opacity 0.5s ease;
-	transition: opacity 0.5s ease; 
+  opacity:0.8; 
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease; 
 }
 .video-home a:hover { opacity:1}
 
@@ -169,13 +173,13 @@ h1 { }
 #footer .nav li.link-video {  width:130px}
 #footer .nav li.link-contact { width:135px}
 #footer .nav .text { 
-	opacity:0.6; 	
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	-ms-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-	padding-top:5px
+  opacity:0.6;  
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  padding-top:5px
 }
 #footer .nav a:hover .text { opacity:1}
 
