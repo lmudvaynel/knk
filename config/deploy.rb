@@ -7,7 +7,7 @@ set :stages, %w(production staging)
 set :default_stage, "staging"
 require 'capistrano/ext/multistage'
 
-set :application, "knken" #write app name there
+set :application, "knk" #write app name there
 
 set :scm, :git
 set :repository,  "git@github.com:lmudvaynel/knk.git" #place your repo there
